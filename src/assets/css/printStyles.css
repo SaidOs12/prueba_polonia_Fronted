@@ -1,0 +1,52 @@
+/* Estilos personalizados */
+@media print {
+    /* Ajustar el tamaño del papel */
+    @page {
+      size: 72.1mm 700mm; /* Ancho x Altura */
+      margin: 0mm; /* Eliminar el margen */
+      border: none; /* Eliminar el borde */
+    }
+  
+    /* Estilos para el contenido del ticket */
+    .ticket {
+      width: 72.1mm;
+      height: auto;
+      background-color: white;
+      padding: 2mm;
+      text-align: left;
+      page-break-after: always; /* Añadir corte de página */
+    }
+  
+    .ticket h3 {
+      margin: 0; /* Eliminar el margen */
+    }
+  
+    .ticket .product {
+      display: flex;
+      justify-content: space-between;
+      margin: 0; /* Eliminar el margen */
+      padding: 0; /* Eliminar el padding */
+    }
+  
+    .ticket .product span {
+      margin: 0; /* Eliminar el margen */
+      padding: 0; /* Eliminar el padding */
+    }
+  
+    .ticket-header {
+      text-align: center;
+    }
+  
+    .ticket-header img {
+      width: 290px;
+      height: 100px;
+      display: block;
+      margin: 0px;
+    }
+  
+    /* Configuración para cortar el documento */
+    .cut {
+      page-break-after: always; /* Forzar un corte de página después del elemento */
+    }
+  }
+  
